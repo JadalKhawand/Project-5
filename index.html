@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Note App</title>
+</head>
+
+<body>
+  <div class="container w-full h-full flex justify-center p-5">
+    <div class="wrapper">
+      <div class="left pt-4">
+        <span class="addCard">
+          <i class="fas fa-plus-circle text-3xl"></i>
+        </span>
+        <ul class="cardThemes">
+          <li class="cardTheme" style="--i:1; background-color: #B0C4DE;">&nbsp;</li>
+          <li class="cardTheme" style="--i:2; background-color: #98FB98;">&nbsp;</li>
+          <li class="cardTheme" style="--i:3; background-color: #E6E6FA;">&nbsp;</li>
+          <li class="cardTheme" style="--i:4; background-color: #EEE8AA;">&nbsp;</li>
+          <li class="cardTheme" style="--i:5; background-color: #FFB6C1;">&nbsp;</li>
+        </ul>
+      </div>
+      <div class=" right pl-10">
+        <div>
+          <h1>Notes</h1>
+        </div>
+        <div class="cardContainer w-full h-full overflow-auto">
+          <div class="card cardTemplate">
+            <i class="fas fa-plus text-3xl"></i> <br>
+            Add Card
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
